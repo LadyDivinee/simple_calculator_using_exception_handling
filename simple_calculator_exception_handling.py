@@ -59,3 +59,6 @@ def calculator_system():
         #error handling for input problems
         except ValueError:
             print("Only numerical values are accepted.")
+        #error handling to prevent crash when dividing by 0
+        except ZeroDivisionError:
+            print("Error: You are dividing by zero.")
