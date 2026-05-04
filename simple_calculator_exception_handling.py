@@ -7,3 +7,5 @@ class Calculator:
     def final_answer(self, operation, answer):
         print("Selected Operation: ", operation)
         print("Answer: ", answer)
+#child class inherited from Calculator
+class CalculatorOperations(Calculator):
