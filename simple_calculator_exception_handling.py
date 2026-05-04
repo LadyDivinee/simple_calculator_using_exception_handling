@@ -62,3 +62,6 @@ def calculator_system():
         #error handling to prevent crash when dividing by 0
         except ZeroDivisionError:
             print("Error: You are dividing by zero.")
+        #to run the program
+        finally:
+            print("--- Calculation process completed ---")
