@@ -18,3 +18,6 @@ class CalculatorOperations(Calculator):
     #for multiplication operation
     def multiplication(self):
         return self.first_number * self.second_number
+    #for division operation
+    def division(self):
+        return self.first_number / self.second_number
