@@ -56,3 +56,6 @@ def calculator_system():
 
             else:
                 print("Invalid selection.")
+        #error handling for input problems
+        except ValueError:
+            print("Only numerical values are accepted.")
