@@ -41,19 +41,14 @@ def calculator_system():
                 |============================|
                 """)
             input_operation = input("Number of your choice: ")
-
             if input_operation == '1':
                 simple_calculator.final_answer("Addition", simple_calculator.addition())
-
             elif input_operation == '2':
                 simple_calculator.final_answer("Subtraction", simple_calculator.subtraction())
-
             elif input_operation == '3':
                 simple_calculator.final_answer("Multiplication", simple_calculator.multiplication())
-
             elif input_operation == '4':
                 simple_calculator.final_answer("Division", simple_calculator.division())
-
             else:
                 print("Invalid selection.")
         #error handling for input problems
