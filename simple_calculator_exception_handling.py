@@ -23,3 +23,36 @@ class CalculatorOperations(Calculator):
         return self.first_number / self.second_number
 #main program
 def calculator_system():
+    #exception handling
+    while True:
+        print("+++ Simple Calculator by Lady Divine OTG <3 +++")
+        try:
+            num_1 = float(input("Enter first number: "))
+            num_2 = float(input("Enter second number: "))
+            simple_calculator = CalculatorOperations(num_1, num_2)
+            print("""
+                ==============================
+                |      S E L E C T I O N     |
+                |----------------------------|
+                | 1. Add                     |
+                | 2. Subtract                |
+                | 3. Multiply                |
+                | 4. Divide                  |
+                |============================|
+                """)
+            input_operation = input("Number of your choice: ")
+
+            if input_operation == '1':
+                simple_calculator.final_answer("Addition", simple_calculator.addition())
+
+            elif input_operation == '2':
+                simple_calculator.final_answer("Subtraction", simple_calculator.subtraction())
+
+            elif input_operation == '3':
+                simple_calculator.final_answer("Multiplication", simple_calculator.multiplication())
+
+            elif input_operation == '4':
+                simple_calculator.final_answer("Division", simple_calculator.division())
+
+            else:
+                print("Invalid selection.")
