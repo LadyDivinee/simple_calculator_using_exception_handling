@@ -9,3 +9,6 @@ class Calculator:
         print("Answer: ", answer)
 #child class inherited from Calculator
 class CalculatorOperations(Calculator):
+    #addition operation
+    def addition(self):
+        return self.first_number + self.second_number
