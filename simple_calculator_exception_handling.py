@@ -12,3 +12,6 @@ class CalculatorOperations(Calculator):
     #addition operation
     def addition(self):
         return self.first_number + self.second_number
+    #for subtraction operation
+    def subtraction(self):
+        return self.first_number - self.second_number
