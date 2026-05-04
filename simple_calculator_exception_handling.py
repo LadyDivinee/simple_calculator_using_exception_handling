@@ -69,3 +69,6 @@ def calculator_system():
         if input("You want to try again? (yes/no): ") != 'yes':
             print("Thank you!")
             break
+#run the whole program and functions
+if __name__ == "__main__":
+    calculator_system()
