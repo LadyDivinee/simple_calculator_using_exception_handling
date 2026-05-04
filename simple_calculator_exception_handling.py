@@ -65,3 +65,7 @@ def calculator_system():
         #to run the program
         finally:
             print("--- Calculation process completed ---")
+        #asks the user if they want to continue
+        if input("You want to try again? (yes/no): ") != 'yes':
+            print("Thank you!")
+            break
