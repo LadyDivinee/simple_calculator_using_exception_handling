@@ -21,3 +21,5 @@ class CalculatorOperations(Calculator):
     #for division operation
     def division(self):
         return self.first_number / self.second_number
+#main program
+def calculator_system():
